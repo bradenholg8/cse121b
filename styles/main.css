@@ -314,7 +314,7 @@ footer {
 
     .container {
         margin: 0 auto;
-        max-width: 400px; /* Adjust the max-width as needed */
+        max-width: 400px; 
         text-align: center;
     }
     
@@ -322,9 +322,42 @@ footer {
         margin-bottom: 20px;
     }
     
-    /* Style for error message */
+    
     .error {
         color: red;
     }
+
+    #filterContainer {
+        text-align: center; 
+        margin-bottom: 20px; 
+      }
+      
+      #filtered {
+        padding: 8px 12px; 
+        font-size: 16px; 
+        border-radius: 5px; 
+        border: 1px solid #ccc; 
+        background-color: #fff; 
+        cursor: pointer; 
+        transition: border-color 0.3s ease; 
+      }
+      
+      #filterContainer {
+        text-align: center; 
+      }
+      
+      #filtered {
+        padding: 8px 12px; 
+        font-size: 16px; 
+        border-radius: 5px; 
+        border: 1px solid #ccc;
+        background-color: #fff;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+      }
+      
+      #filtered:hover {
+        border-color: #003cff; 
+      }
 
 }
