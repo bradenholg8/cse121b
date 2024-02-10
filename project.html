@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | Project</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html">W5 Task</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+    <main id="gridly">
+        <h1>Project</h1>
+        <div>
+            <label for="amount">Amount:</label>
+            <input type=number id="amount">
+            <div class="dropdowns">
+                <select id="from-currency-select"></select>
+                <select id="to-currency-select"></select>
+            </div>
+            <button id="convert-button">Convert</button>
+            <p id="result"></p>
+        </div>
+    </main>
+
+    <footer>
+        &copy;<span id="year"></span> | Week 06 - Currency Converter | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="currency-codes.js"></script>
+    <script src="api-key.js"></script>
+    <script src="scripts/project.js"></script>
+</body>
+
+</html>
