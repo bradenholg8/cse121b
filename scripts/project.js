@@ -1,4 +1,3 @@
-// Define a function to fetch word definitions
 async function fetchDefinitions(word) {
     try {
         const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
@@ -10,10 +9,9 @@ async function fetchDefinitions(word) {
     }
 }
 
-// Define a function to display the definitions or error message
 function displayDefinitions(definitions) {
     const definitionsContainer = document.getElementById('definitions');
-    definitionsContainer.innerHTML = ''; // Clear previous content
+    definitionsContainer.innerHTML = '';
 
     if (!definitions || definitions.length === 0) {
         const errorMessage = document.createElement('p');
@@ -44,7 +42,6 @@ function displayDefinitions(definitions) {
     });
 }
 
-// Define a function to handle form submission
 function handleFormSubmit(event) {
     event.preventDefault();
     const word = document.getElementById('search').value.trim();
@@ -57,6 +54,5 @@ function handleFormSubmit(event) {
         .catch(error => console.error('Error:', error));
 }
 
-// Attach event listener to form submit
 const form = document.getElementById('searchForm');
 form.addEventListener('submit', handleFormSubmit);

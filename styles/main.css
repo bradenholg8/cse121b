@@ -407,7 +407,7 @@ input[type="text"] {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -415,12 +415,12 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Darker Green */
+    background-color: #45a049;
 }
 
 #definitions {
-    margin: 20px auto; /* Center the definitions horizontally */
-    max-width: 800px; /* Limit the width of the container */
+    margin: 20px auto; 
+    max-width: 800px; 
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
